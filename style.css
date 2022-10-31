@@ -1,0 +1,78 @@
+*,*::before,*::after{padding:0;margin:0;border:0;box-sizing:border-box;}a{text-decoration:none;}ul,ol,li{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}img{vertical-align:top;}html,body{height:100%;}
+
+@font-face {
+	font-family: 'Pelagy';
+    src: url('Pelagy.eot');
+	src: local('Pelagy cyr only'), local('Pelagy'),
+		url('Pelagy.eot?#iefix') format('embedded-opentype'),
+		url('Pelagy.woff') format('woff'),
+		url('Pelagy.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body{
+    font-family: 'Pelagy';
+    background: #4158D0 linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    padding: 0 40px;
+}
+
+.block {
+    padding: 30px;
+    border-radius: 26px;
+    background: #e0e0e0;
+    box-shadow:  24px 24px 0px #5a5a5a, -24px -24px 0px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.block__logo {
+    width: 100%;
+    border-radius: 10px;
+    transition: 250ms;
+}
+.block__logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 7px 10px 4px rgb(109, 109, 109);
+}
+
+.block__title {
+    margin-top: 30px;
+    text-align: center;
+    transition: 200ms;
+}
+
+.text-item {
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1.4em;
+    transition: 250ms;
+    animation: title 6s ease infinite;
+}
+.text-item:hover {
+    transform: scale(1.5);
+    color: #4158D0 !important;
+}
+
+@keyframes title {
+    45% {
+        color: #C850C0;
+    }
+    55% {
+        color: #C850C0
+    }
+}
+
+@media (max-width: 360px) {
+    .text-item {
+        font-size: 26px;
+    }
+}
